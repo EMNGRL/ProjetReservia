@@ -582,15 +582,20 @@ footer{
 
 	header{
 	display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "imgheader navinscription"
-        "navhebergements navactivites";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60% 60%;
+    
+    }
+
+    .imgheader{
+    	grid-column: 1;
+    	grid-row: 1;
     }
 
     nav{
     	margin-left: 0;
+    	grid-column: 1;
+		grid-row: 2;
 
     }
 
@@ -599,10 +604,14 @@ footer{
     	margin: 0;
     }
 
+    nav li a {
+    	padding: 0;
+    }
+
 	.navinscription{
-		position: absolute;
-		right: 0px;
-		top: 15px;
+		grid-column: 2;
+		grid-row: 1;
+		text-align: end;
 	}
 
 	.navhebergements{
