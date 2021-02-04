@@ -2,16 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 		<link rel="stylesheet" href="styles.css" />
 		<title> P2_RESERVIA_NEGREL_EMMA </title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<script src="https://kit.fontawesome.com/bb13c13b83.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		
 	</head>
-
-
-
-
 
 	<body>
 
@@ -19,7 +16,7 @@
 
 		
 			<img class="imgheader" src="images/logo/Reservia@3x.png"> <!--LOGO RESERVIA-->
-
+		
 			<nav> <!--MENU-->
 				<ul>
 					<li><a class="navhebergements" href="#">Hébergements</a></li>
@@ -34,29 +31,36 @@
 
 		<main> <!-- MAIN -->
 
-			<section class="recherche">
+			<!--SECTION RECHERCHE-->
+			<section class="recherche"> 
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<p>En plein centre ville ou en pleine nature</p>
 
+				<!--BOUTON RECHERCHE-->
 				<div class="barre_recherche">
-				<span class="icone_carte"> 
-					<i class="fas fa-map-marker-alt"></i>
-				</span>
 
-				<form method="post" action="#"> <!--BOUTON RECHECHE-->
-					<input type="search" name="search" value="Marseille, France" />
-					<button class="bouton_recherche" type="button">
-						Rechercher
-					</button>
+					<!--ICONE CARTE-->
+					<span class="icone_carte"> 
+						<i class="fas fa-map-marker-alt"></i>
+					</span>
 
+					<!--FORMULAIRE VILLE-->
+					<form method="post" action="#"> 
+						<input type="search" name="search" value="Marseille, France" />
+					</form>
+
+					<!--BOUTON RECHERCHER-->
+					<button class="bouton_recherche" type="button">Rechercher</button> 
+
+					<!--BOUTON LOUPE-->
 					<button class="bouton_loupe" type="button">
-						<i class="fas fa-search"></i>
+							<i class="fas fa-search"></i>
 					</button>
-					
-				</form>
+
 				</div>
 
-				<div class="filtres"> <!--FILTRES-->
+				<!--FILTRES-->
+				<div class="filtres"> 
 					<h2>Filtres</h2>
 					<div class="boutons_filtres">
 						<span class="recherche_filtres"><i class="fas fa-money-bill-wave"></i>Économique</span>
@@ -72,7 +76,8 @@
 					</div>
 				</div>
 
-				<div class="info_recherche"> <!--RESULTATS RECHERCHES-->
+				<!--RESULTATS RECHERCHES-->
+				<div class="info_recherche">
 				<span class="icone_info">
 					<i class="fas fa-info"></i>
 				</span>
@@ -80,9 +85,11 @@
 				</div>
 			</section>
 
+			<!--SECTION BLOCS HEBERGEMENTS + POPULAIRES-->
 			<section class="blocs">
 
-				<article class="hebergements"> <!--HEBERGEMENTS A MARSEILLE-->
+				<!--HEBERGEMENTS A MARSEILLE-->
+				<article class="hebergements"> 
 
 					<h3>Hébergements à Marseille</h3>
 
@@ -202,7 +209,8 @@
 					<h4>Afficher plus</h4>
 				</article>
 
-				<article class="populaires"> <!--LES PLUS POPULAIRES-->
+				<!--LES PLUS POPULAIRES-->
+				<article class="populaires"> 
 
 					<h3>Les plus populaires</h3>
 
@@ -271,74 +279,7 @@
 
 			</section>
 
-
-			<section class="activites"> <!--ACTIVITES A MARSEILLE-->
-				
-				<h5>Activités à Marseille</h5>
-
-				<div class="blocs_activites">
-	
-					<article class="vieux_port">
-						<img src="images/activites/3_medium/vieux_port.jpg">
-						<h6>Vieux Port</h6>
-					</article>
-
-					<article class="pomegues">
-						<img src="images/activites/3_medium/pomegues.jpg">
-						<h6>Fort de Pomègues</h6>
-					</article>
-
-					<article class="frioul">
-						<img src="images/activites/3_medium/frioul.jpg">
-						<h6>Îles du Frioul</h6>
-					</article>
-
-					<article class="calanques">
-						<img src="images/activites/3_medium/calanques.jpg">
-						<h6>Parc National des Calanques</h6>
-					</article>
-
-					<article class="notre_dame">
-						<img src="images/activites/3_medium/notre_dame_de_la_garde.jpg">
-						<h6>Notre Dame de la Garde</h6>
-					</article>
-
-					<article class="parc_longchamp">
-						<img src="images/activites/3_medium/parc_longchamp.jpg">
-						<h6>Parc Longchamp</h6>
-					</article>
-
-				</div>
-
-			</section>
-			
 		</main>
-	
-		<footer>
-			
-			<section class="nav_footer">
-
-				<div class="a_propos">
-					<nav> <!--MENU-->
-						<ul>
-							<a><br>A propos</a>
-							<a>Fonctionnement du site</a>
-							<a>Conditionnement générales de vente</a>
-							<a>Données et confidentialité</a>
-						</ul>
-					</nav>	
-				</div>
-
-				<div class="nos_hebergements">
-					
-				</div>
-
-				<div class="assistance">
-					
-				</div>
-			</section>	
-
-		</footer>
 
 	</body>
 </html>
